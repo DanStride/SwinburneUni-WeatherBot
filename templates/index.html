@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            height: 100%;
+            width: 100%;
+        }
+        .mainHeading {
+            display: inline;
+            font-weight: 100;
+            font-size: 2.5em;
+            margin: 0.5em;
+        }
+        .bannerHeading {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgray;
+        }
+        .mainContainer {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px lightgray;
+            width: 600px;
+            height: 100%;
+            padding: 10px;
+        }
+        .chatWindow {
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            margin-bottom: 1em;
+            min-height: 300px;
+        }
+        .chatHistoryBlock {
+            margin: 0.25em;
+        }
+        .chatHistoryBlockBot {
+            margin: 0.25em;
+            color: darkgray;
+        }
+        form {
+            display: flex;
+            justify-content: space-between;
+        }
+        input {
+            width: 80%;
+            margin-right: 10px;
+        }
+        button {
+            width: 20%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<section class="mainContainer">
+    <div class="bannerHeading">
+        <h1 class="mainHeading">Weatherbot Pro</h1>
+        <img src="../static/robot-solid.svg" width="80" height="80">
+    </div>
+    <section class="chatWindow">
+        <div class="chatHistoryBlockBot">{{pos_9}}</div>
+        <div class="chatHistoryBlock">{{pos_8}}</div>
+        <div class="chatHistoryBlockBot">{{pos_7}}</div>
+        <div class="chatHistoryBlock">{{pos_6}}</div>
+        <div class="chatHistoryBlockBot">{{pos_5}}</div>
+        <div class="chatHistoryBlock">{{pos_4}}</div>
+        <div class="chatHistoryBlockBot">{{pos_3}}</div>
+        <div class="chatHistoryBlock">{{pos_2}}</div>
+        <div class="chatHistoryBlockBot">{{pos_1}}</div>
+        <form action="/" method="POST">
+            <input type="text" id="bot_input" name="bot_input" minlength="2" maxlength="100" autofocus/>
+            <button>Post</button>
+    </section>
+</section>
+
+</form>
+</body>
+</html>
