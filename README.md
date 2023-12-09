@@ -14,4 +14,4 @@ To run the application:
 4. Overwrite env.py with the file I supply for you
 5. Run
 
-The API key is stored in the env.py file and one must be overwritten with the file I supply for you in order for the app to work (unless you want to supply your own)
+The API key is stored in the env.py file and must be overwritten with the file I supply for you in order for the app to work (unless you want to supply your own)
